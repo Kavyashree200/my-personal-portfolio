@@ -1,51 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Contact | Kavyashree</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-    <h1>My Personal Portfolio</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="biodata.html">Bio-data</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-    <h1>Contact Me</h1>
-<p>Feel free to contact me using the details below.</p>
-<h2>My Contact Details</h2>
-<p>Email: kavyashreedevaragundi6@gmail.com</p>
-<p>Phone: 9632674325</p>
-<p>Location:Nettar</p>
-<h2>Send Me a Message</h2>
 
-<form>
-    <label>Your Name:</label>
-    <input type="text" placeholder="Enter your name">
+    <header class="site-header">
 
-    <br><br>
+        <h1>Kavyashree's Portfolio</h1>
 
-    <label>Your Email:</label>
-    <input type="email" placeholder="Enter your email">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="biodata.html">Bio-data</a>
+            <a class="active" href="contact.html">Contact</a>
+        </nav>
 
-    <br><br>
+    </header>
 
-    <label>Your Message:</label>
-    <textarea placeholder="Write your message"></textarea>
+    <main class="contact-container">
 
-    <br><br>
+        <h1 class="page-title">Contact Me</h1>
 
-    <button type="submit">Send Message</button>
+        <p style="text-align: center;">
+            Feel free to contact me using the details below.
+        </p>
 
-</form>
-<script src="script.js"></script>
-<footer>
-    <p>© 2026 Kavyashree. All Rights Reserved.</p>
-</footer>
+        <!-- CONTACT INFORMATION -->
+
+        <section class="content-section">
+
+            <h2>Contact Information</h2>
+
+            <div class="contact-details">
+
+                <p>
+                    <strong>Email:</strong>
+                    kavyashreedevaragundi6@gmail.com
+                </p>
+
+                <p>
+                    <strong>Phone:</strong>
+                    9632674325
+                </p>
+
+                <p>
+                    <strong>Location:</strong>
+                    Nettar
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT FORM -->
+
+        <section class="content-section">
+
+            <h2>Send Me a Message</h2>
+
+            <form>
+
+                <label for="name">Your Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="email">Your Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="message">Your Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write your message here"
+                    required
+                ></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>© 2026 Kavyashree. All Rights Reserved.</p>
+
+    </footer>
+
 </body>
 </html>
